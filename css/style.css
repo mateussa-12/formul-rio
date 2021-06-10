@@ -15,16 +15,19 @@ body{
 }
 /*borda do formulário*/
 .container{
-	max-width:700px;
+	max-width:400px;
 	width:100%;
 	background:#fff;
 	padding:25px 30px;
 	border-radius:5px;
 }
+
+
+
 .container form .user-details{
-	display:flex;
+	/*display:flex;
 	flex-wrap:wrap;
-	margin:20px 0 12px 0;
+	margin:20px 0 12px 0;*/
 }
 form .user-details .input-box{
 	margin-bottom:15px;
@@ -42,7 +45,23 @@ form .user-details .input-box{
 	border-radius:5px;
 	border:1px solid #ccc;
 	padding-left:15px;
-	font-size:16px;
+	font-size:20px;
 	border-bottom-width:2px;
 	transition:all 0.3s ease;
+}
+
+form .btn input{
+	/*height:100%;*/
+	width:100%;
+	outline:none;
+	color:#fff;
+	border:none;
+	font-size:18px;
+	font-weight:500;
+	border-radius:5px;
+	letter-spacing:1px;
+	background:linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+form .btn input:hover{
+	background:linear-gradient(-135deg,#71b7e6,#9b59b6);
 }

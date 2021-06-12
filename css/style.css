@@ -15,11 +15,13 @@ body{
 }
 /*borda do formulário*/
 .container{
+	position:absolute;
 	max-width:400px;
 	width:100%;
 	background:#fff;
 	padding:25px 30px;
 	border-radius:5px;
+	box-shadow:4px 4px 2px rgba(254,236,164,1);
 }
 
 
@@ -64,4 +66,10 @@ form .btn input{
 }
 form .btn input:hover{
 	background:linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
+
+.container #error_message{
+	margin-bottom:20px;
+	 padding:10px;
+	 background:#fe8b83;
 }

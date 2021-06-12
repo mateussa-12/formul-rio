@@ -3,27 +3,30 @@
 		<meta charset="UTF-8">
 		<title>Formulário</title>
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
 	<body>
 		<div class="container">
-			<form>
+			<div id="error_message"></div>
+			
+			<form onsubmit="return validation()">
 				<div class="user-details">
 					<div class="input-box"> 
 						<span class="details">Nome Completo</span>
-						<input type="text" placeholder="Digite seu nome">
+						<input type="text" placeholder="Digite seu nome" id="nome">
 					</div>
 					<div class="input-box" >
 						<span class="details">Email</span>
-						<input type="text" placeholder="Digite seu email">
+						<input type="text" placeholder="Digite seu email" id="Email">
 					</div>
 					<div class="input-box">
 						<span class="details">Senha</span>
-						<input type="text" placeholder="Digite a senha">
+						<input type="text" placeholder="Digite a senha" id="senha">
 					</div>
-					<div class="btn">
-						<input type="submit">
+					<div class="btn" >
+						<input type="submit" id="botao">
 					</div>
 			</form>
 		</div>

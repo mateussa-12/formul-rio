@@ -4,7 +4,7 @@ function validation(){
 	var email = document.getElementById("Email").value;
 	var senha = document.getElementById("senha").value;
 	var erro = document.getElementById("error_message");
-	var txt,txe;
+	var txt,txe,txs;
 
 	erro.style.padding = "10px";	
 	
@@ -20,7 +20,13 @@ function validation(){
 		return false;
 	}	
 	
-	return false;
+	if(senha.length < 7){
+		txs = "senha pequena";
+		erro.innerHTML = txs;
+		return false;	
+	}
+	alert("cadastrado com sucesso!")
+	return true;
 	
 }
 		
